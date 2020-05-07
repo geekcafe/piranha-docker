@@ -11,7 +11,7 @@ services:
     restart: always
 
   web-service:
-    container_name: piranha-web-razor-behind-ngnix
+    container_name: piranha-web-razor-behind-nginx
     depends_on:
       - reverseproxy
     build:
