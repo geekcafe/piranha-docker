@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  
+
+  web-service:
+    container_name: piranha-web-razor    
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - project_name=RazorWeb
+        - project_path=piranha.core/examples/RazorWeb/
+        - git_repo=https://github.com/PiranhaCMS/piranha.core.git    
+    ports:
+      - 5000:5000
+    restart: always
