@@ -1,4 +1,4 @@
-# Prianha Docker
+# Piranha Docker
 
 This repo contains a quick and easy way to run the piranha cms via docker container.
 
