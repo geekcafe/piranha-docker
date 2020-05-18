@@ -14,4 +14,4 @@ services:
         - git_repo=https://github.com/PiranhaCMS/piranha.core.git    
     ports:
       - 5000:5000
-    restart: always
+    #restart: always

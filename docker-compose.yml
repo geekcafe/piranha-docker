@@ -11,16 +11,10 @@ services:
     restart: always
 
   web-service:
+    image: geekcafe/piranha-razor-sqlite:latest
     container_name: piranha-web-razor-behind-nginx
     depends_on:
-      - reverseproxy
-    build:
-      context: ./piranha-razor
-      dockerfile: Dockerfile
-      args:
-        - project_name=RazorWeb
-        - project_path=piranha.core/examples/RazorWeb/
-        - git_repo=https://github.com/PiranhaCMS/piranha.core.git
+      - reverseproxy    
     expose:
       - "5000"
     restart: always

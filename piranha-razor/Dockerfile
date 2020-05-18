@@ -63,3 +63,9 @@ ENTRYPOINT ["sh", "/app/launch.sh"]
 # ------------- trouble shooting the build process  -----------------------------------------------
 ## if a build layer fails, you can "enter" that build layer and inspect the current contents
 ## docker run -it [image_id] sh
+
+
+## docker build -t geekcafe/piranha-razor-sqlite:0.0.1 --build-arg project_name=RazorWeb  --build-arg project_path=piranha.core/examples/RazorWeb/ --build-arg git_repo=https://github.com/PiranhaCMS/piranha.core.git  .
+## docker tag geekcafe/piranha-razor-sqlite:0.0.1 geekcafe/piranha-razor-sqlite:latest
+## docker push geekcafe/piranha-razor-sqlite:0.0.1
+## docker push geekcafe/piranha-razor-sqlite:latest
