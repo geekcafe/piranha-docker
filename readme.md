@@ -13,7 +13,10 @@ Run the following commands
 
 `docker-compose up` or `docker-compose up -d`
 
-Navigate to `http://localhost:8181`
+Navigate to `http://localhost`
+
+If you already have something running on port 80, just change the port mapping in the docker-compose file.  For example change 80:80 to 8181:80 then navigate to `http://localhost:8181`
+
 
 
 ## Quick start w/ just .net core (kestrel)
